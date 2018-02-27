@@ -33,7 +33,7 @@ h2		{
 		border:solid;
 		display:block;
 		margin:auto;
-		border-radius: 6px;		
+		border-radius: 6px;
 		}
 .pie	{
 		background-color:#F7F39A;
@@ -371,7 +371,8 @@ span, .correcta {
 		margin-left:10px;
 		}
 		
-/*Estilos del temporizador*/	
+/*Estilos del temporizador*/
+
 .temporizador {
 	font-family:Verdana;
 	font-size:30px;
