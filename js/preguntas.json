@@ -1,0 +1,129 @@
+{
+  "questions": {
+    "question": [
+      {
+        "-id": "PREGUNTA1",
+        "type": "text",
+        "title": "¿Cuántos Kilobytes tiene un Gigabyte?",
+        "answer": "1048576"
+      },
+      {
+        "-id": "PREGUNTA2",
+        "type": "text",
+        "title": "Expresa el número 575 decimal en binario",
+        "answer": "1000111111"
+      },
+      {
+        "-id": "PREGUNTA3",
+        "type": "radio",
+        "title": "¿Qué es hardware?",
+        "option": [
+          "Los programas del ordenador",
+          "Es un tipo de virus",
+          "Es la parte física del ordenador",
+          "Es la parte lógica del ordenador"
+        ],
+        "answer": "3"
+      },
+      {
+        "-id": "PREGUNTA4",
+        "type": "radio",
+        "title": "¿Cuáles son tipos de virus?",
+        "option": [
+          "Firewall, P2P Y Block",
+          "Spyware, Troyano y Gusano",
+          "AVG, Avast y Norton"
+        ],
+        "answer": "2"
+      },
+      {
+        "-id": "PREGUNTA5",
+        "type": "multiple",
+        "title": "De estas partes de la placa base, ¿cuáles son ranuras de expansión?",
+        "option": [
+          "PCI-Express",
+          "Slot de memoria RAM",
+          "Northbridge",
+          "Southbridge"
+        ],
+        "answer": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "-id": "PREGUNTA6",
+        "type": "multiple",
+        "title": "¿Cuáles de estos periféricos son de salida?",
+        "option": [
+          "Monitor",
+          "Teclado y ratón",
+          "Escáner",
+          "Impresora",
+          "Altavoces",
+          "Micrófono"
+        ],
+        "answer": [
+          "1",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "-id": "PREGUNTA7",
+        "type": "select",
+        "title": "¿Cuáles de estos programas son de Office?",
+        "option": [
+          "Fireworks, Flash, y Dreamweaver",
+          "Word, Excel y Access",
+          "Paint, Explorer y Movie Maker",
+          "Writter, Calc e Impress"
+        ],
+        "answer": "2"
+      },
+      {
+        "-id": "PREGUNTA8",
+        "type": "select",
+        "title": "Para cerrar una ventana en Windows, ¿qué atajo de teclado debemos pulsar?",
+        "option": [
+          "Tecla Windows+E",
+          "Ctrl + Esc",
+          "Alt + F4",
+          "Ctrl + C"
+        ],
+        "answer": "3"
+      },
+      {
+        "-id": "PREGUNTA9",
+        "type": "checkbox",
+        "title": "¿Cuál o cuáles de estos comandos se utilizan en la terminal de Linux?",
+        "option": [
+          "cd",
+          "dir",
+          "mkdir",
+          "md"
+        ],
+        "answer": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "-id": "PREGUNTA10",
+        "type": "checkbox",
+        "title": "¿Cuál o cuáles de estas palabras son particiones de disco duro?",
+        "option": [
+          "Primaria",
+          "Secundaria",
+          "Extendida",
+          "lógica"
+        ],
+        "answer": [
+          "1",
+          "3",
+          "4"
+        ]
+      }
+    ]
+  }
+}
