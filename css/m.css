@@ -60,7 +60,8 @@ p 		{
 		
 /* Estilos para el formulario */
 fieldset {
-		border: 0 none;
+		border: 2px;
+		border-color: #000;
 		}
 
 input[type=text] {
