@@ -1,76 +1,21 @@
-<!DOCTYPE html>
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Creado con Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
-<xs:schema xmlns:xsl="http://www.w3.org/1999/XSL/Transform" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="schema1.xsd" />
-  <xs:element name="stylesheet">
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="questions">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="template">
+        <xs:element maxOccurs="unbounded" name="question">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="div" />
+              <xs:element name="type" type="xs:string" />
+              <xs:element name="title" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="option" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="answer" type="xs:unsignedInt" />
             </xs:sequence>
-            <xs:attribute name="match" type="xs:string" use="required" />
+            <xs:attribute name="id" type="xs:string" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="version" type="xs:decimal" use="required" />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="for-each">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="variable">
-          <xs:complexType>
-            <xs:attribute name="name" type="xs:string" use="required" />
-            <xs:attribute name="select" type="xs:string" use="required" />
-          </xs:complexType>
-        </xs:element>
-        <xs:element minOccurs="0" name="if">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element ref="td" />
-            </xs:sequence>
-            <xs:attribute name="test" type="xs:string" use="required" />
-          </xs:complexType>
-        </xs:element>
-        <xs:element minOccurs="0" name="choose">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="when">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" ref="td" />
-                    <xs:element minOccurs="0" ref="span" />
-                  </xs:sequence>
-                  <xs:attribute name="test" type="xs:string" use="required" />
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" name="otherwise">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element ref="td" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element minOccurs="0" ref="tr" />
-      </xs:sequence>
-      <xs:attribute name="select" type="xs:string" use="required" />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="value-of">
-    <xs:complexType>
-      <xs:attribute name="select" type="xs:string" use="required" />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="variable">
-    <xs:complexType>
-      <xs:attribute name="name" type="xs:string" use="required" />
-      <xs:attribute name="select" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
 </xs:schema>
