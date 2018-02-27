@@ -64,54 +64,41 @@ p 		{
 		
 /* Contenedor Popup */
 .popup {
-    	position: relative;
+    		position: relative;
    		display: inline-block;
-    	cursor: pointer;
+    		cursor: pointer;
 		}
 
 /* Popup aparece en la parte superior */
 .popup .popuptexto {
-    	visibility: hidden;
-    	width:500px;
-    	background-color:#A3DE83;
-    	text-align: center;
-    	border-radius: 6px;
-    	position: absolute;
+    		visibility: hidden;
+    		width:500px;
+    		background-color:#A3DE83;
+    		text-align: center;
+    		border-radius: 6px;
+    		position: absolute;
 		margin-left:-250px;
-    	z-index: 1;
-    	bottom: 125%;
+    		z-index: 1;
+    		bottom: 125%;
 		}
 
 /* Popup flecha */
 .popup .popuptexto::after {
-    	content: "";
-    	position: absolute;
+    		content: "";
+    		position: absolute;
    	 	margin-left: -5px;
-    	border-width: 10px;
-    	border-style: solid;
-    	border-color: #000 transparent transparent transparent;
+    		border-width: 10px;
+    		border-style: solid;
+    		border-color: #000 transparent transparent transparent;
 	
 		}
 
 /* Muestra el popup */
 .popup .mostrar {
-    	visibility: visible;
-    	-webkit-animation: fadeIn 1s;
-    	animation: fadeIn 1s;
+    		visibility: visible;
 		border:3px solid #000;
 }
 
-/* Transparencia Popup */
-@-webkit-keyframes fadeIn {
-    	from {opacity: 0;} 
-    	to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    	from {opacity: 0;}
-    	to {opacity:1 ;}
-}
-	
 /* Estilos para el formulario */
 input[type=text] {
   		border: 1px solid #239D60;
