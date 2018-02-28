@@ -95,6 +95,6 @@ En las hojas de estilos .css también hay comentarios explicando los diferentes 
 ### RESTO DE ARCHIVOS
 -He creado el archivo .xsd a partir del .xml en esta página: https://goo.gl/2DeV4B
 
--He validado el documento: https://goo.gl/GrC8Mg
+-He validado el documento en esta página: https://goo.gl/GrC8Mg
 
 -He creado el archivo .json a partir del .xml en esta página: https://goo.gl/556uBE
